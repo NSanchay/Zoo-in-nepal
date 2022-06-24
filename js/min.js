@@ -9,7 +9,7 @@ $('.owl-slider').owlCarousel({
             loop:true
         },
         600:{
-            items:3,
+            items:2,
             nav:true,
             loop:true
         },
