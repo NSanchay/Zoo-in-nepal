@@ -20,6 +20,11 @@ $w: #ffffff;
         @content;
     }
 }
+@mixin res39 {
+    @media (max-width:390px) {
+        @content;
+    }
+}
 
 * {
     margin: 0;
@@ -350,44 +355,44 @@ header {
             }
         }
     }
-    .blog-post{
-         .sss{
-            &::after{
-                @include res8{
-                    right: 160px !important;
-                }
-                @include res4{
-                    right: 107px !important;
-                }
-            }
-            &::before{
-                @include res8{
-                    left: 160px !important;
-                }
-                @include res4{
-                    left: 107px !important;
-                }
-            }
-            .after{
-                &::after{
-                    @include res8{
-                        right: 187px !important;
-                    }
-                    @include res4{
-                        right: 133px !important;
-                    }
-                }
-                &::before{
-                    @include res8{
-                        left: 187px !important;
-                    }
-                    @include res4{
-                        left: 133px !important;
-                    }
-                }
-            }
-        }
-    }
+    // .blog-post{
+    //      .sss{
+    //         &::after{
+    //             @include res8{
+    //                 right: 160px !important;
+    //             }
+    //             @include res4{
+    //                 right: 107px !important;
+    //             }
+    //         }
+    //         &::before{
+    //             @include res8{
+    //                 left: 160px !important;
+    //             }
+    //             @include res4{
+    //                 left: 107px !important;
+    //             }
+    //         }
+    //         .after{
+    //             &::after{
+    //                 @include res8{
+    //                     right: 187px !important;
+    //                 }
+    //                 @include res4{
+    //                     right: 133px !important;
+    //                 }
+    //             }
+    //             &::before{
+    //                 @include res8{
+    //                     left: 187px !important;
+    //                 }
+    //                 @include res4{
+    //                     left: 133px !important;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     .img {
         margin: 10px 0;
@@ -511,6 +516,9 @@ header {
                 @include res4{
                     right: 100px;
                 }
+                @include res39{
+                    right: 35px;
+                }
             }
 
             &::before {
@@ -527,6 +535,9 @@ header {
                 }
                 @include res4{
                     left: 100px;
+                }
+                @include res39{
+                    left: 35px;
                 }
             }
 
@@ -546,6 +557,9 @@ header {
                 @include res4{
                     right: 125px;
                 }
+                @include res39{
+                    right: 60px;
+                }
             }
 
             .after::before {
@@ -563,6 +577,9 @@ header {
                 }
                 @include res4{
                     left: 125px;
+                }
+                @include res39{
+                    left: 60px;
                 }
             }
 
@@ -675,6 +692,9 @@ header {
 @include res4{
     left: 125px !important;
 }
+@include res39{
+    left: 70px !important;
+}
 }
 &::after{
     @include res8{
@@ -682,6 +702,9 @@ header {
     }
     @include res4{
         right: 125px !important;
+    }
+    @include res39{
+        right: 70px !important;
     }
 }
 .after{
@@ -692,6 +715,9 @@ header {
         @include res4{
             left: 150px !important;
         }
+        @include res39{
+            left: 95px !important;
+        }
     }
     &::after
     {
@@ -700,6 +726,9 @@ header {
         }
         @include res4{
             right: 150px !important;
+        }
+        @include res39{
+            right: 95px !important;
         }
     }
 }
